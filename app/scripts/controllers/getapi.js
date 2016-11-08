@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name startApp.controller:GetapiCtrl
+ * @name myShopyApp.controller:GetapiCtrl
  * @description
  * # Getapi
- * Controller of the startApp
+ * Controller of the myShopyApp
  */
-angular.module('startApp')
+angular.module('myShopyApp')
   .controller('GetapiCtrl', function (Dataservice) {
 
   	var viewModel = this;

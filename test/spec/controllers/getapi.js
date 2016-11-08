@@ -3,7 +3,7 @@
 describe('Controller: GetapiCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('startApp'));
+  beforeEach(module('myShopyApp'));
 
   var getapi, scope, deferred, dataservice;
 
@@ -13,7 +13,7 @@ describe('Controller: GetapiCtrl', function () {
     deferred = $q.defer();
     dataservice = Dataservice;
     spyOn(Dataservice, 'getData').and.returnValue(deferred.promise);
-    
+
     getapi = $controller('GetapiCtrl', {
       $scope: scope
       // place here mocked dependencies

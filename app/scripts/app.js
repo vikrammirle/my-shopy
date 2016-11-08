@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name startApp
+ * @name myShopyApp
  * @description
- * # startApp
+ * # myShopyApp
  *
  * Main module of the application.
  */
 angular
-  .module('startApp', [
+  .module('myShopyApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

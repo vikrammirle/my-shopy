@@ -2,17 +2,17 @@
 
 /**
  * @ngdoc function
- * @name startApp.Service:Getapiservice
+ * @name myShopyApp.Service:Getapiservice
  * @description
  * # Getapi
- * Controller of the startApp
+ * Controller of the myShopyApp
  */
 
-angular.module('startApp')
+angular.module('myShopyApp')
   .factory('Dataservice', function ($http) {
-    var obj = { 
+    var obj = {
       getData: function() {
-        
+
         function success (response) {
           return response.data;
         }
@@ -20,9 +20,9 @@ angular.module('startApp')
         function failure (response) {
           return response.data;
         }
-        
+
         return $http.get("http://www.w3schools.com/angular/customers.php").then(success, failure);
-      }   
+      }
     };
 
     return obj;

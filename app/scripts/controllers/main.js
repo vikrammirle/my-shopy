@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name startApp.controller:MainCtrl
+ * @name myShopyApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the startApp
+ * Controller of the myShopyApp
  */
-angular.module('startApp')
+angular.module('myShopyApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
