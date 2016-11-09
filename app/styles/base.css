@@ -1,0 +1,9 @@
+.navbar-toggle .icon-bar {
+  background-color: #052A39
+}
+.navbar-nav > li > a {
+  padding-top: 30px;padding-bottom: 10px;
+}
+.container.content-min-height {
+  min-height: 400px;
+}
