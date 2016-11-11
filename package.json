@@ -1,5 +1,5 @@
 {
-  "name": "startapp",
+  "name": "myshopyapp",
   "private": true,
   "devDependencies": {
     "grunt": "^0.4.5",

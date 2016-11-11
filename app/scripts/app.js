@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name startApp
+ * @name myShopyApp
  * @description
- * # startApp
+ * # myShopyApp
  *
  * Main module of the application.
  */
 angular
-  .module('startApp', [
+  .module('myShopyApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -23,6 +23,11 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
+      })
+      .when('/signup', {
+        templateUrl:'views/signup.html',
+        controller: 'SignUpCtrl',
+        controllerAs: 'signup'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
