@@ -14,7 +14,7 @@ angular.module('myShopyApp')
   	viewModel.dataObj = {};
 
   	Dataservice.getData().then(function(response) {
-  		viewModel.dataObj = response.records;
+  		viewModel.dataObj = response.users
   	});
 
   });

@@ -25,9 +25,14 @@ angular
         controllerAs: 'main'
       })
       .when('/signup', {
-        templateUrl:'views/signup.html',
-        controller: 'SignUpCtrl',
+        templateUrl: 'views/register/signup.html',
+        controller: 'SignupCtrl',
         controllerAs: 'signup'
+      })
+      .when('/login', {
+        templateUrl: 'views/login/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
