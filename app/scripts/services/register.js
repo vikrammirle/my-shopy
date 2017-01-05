@@ -9,10 +9,9 @@
  */
 
 angular.module('myShopyApp')
-  .factory('Dataservice', function ($http) {
+  .factory('Registerservice', function ($http) {
     var obj = {
-      getData: function() {
-
+      postData: function(data) {
         function success (response) {
           return response.data;
         }
@@ -21,7 +20,7 @@ angular.module('myShopyApp')
           return response.data;
         }
 
-        return $http.get("http://localhost:3000/users").then(success, failure);
+        return $http.post("http://localhost:3000/users", data).then(success, failure);
       }
     };
 

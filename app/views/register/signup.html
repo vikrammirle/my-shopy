@@ -1,0 +1,46 @@
+<div ng-controller="SignupCtrl">
+  <form class="form-horizontal" name="signUpForm" ng-submit="submitSignupForm(signupmsg)" role="form">
+    <div class="form-group">
+      <label for="first_name" class="col-sm-4 control-label">First Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" name="first_name" id="first_name" ng-model="signupmsg.first_name" placeholder="First Name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="last_name" class="col-sm-4 control-label">Last Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="last_name" ng-model="signupmsg.last_name" placeholder="Last Name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-4 control-label">Email</label>
+      <div class="col-sm-5">
+        <input type="email" class="form-control" id="email" ng-model="signupmsg.email" placeholder="Email" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mobile_number" class="col-sm-4 control-label">Mobile</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="mobile_number" ng-model="signupmsg.mobile_number" placeholder="Password" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-4 control-label">Password</label>
+      <div class="col-sm-5">
+        <input type="password" class="form-control" id="password" ng-model="signupmsg.password" placeholder="Password" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password_confirmation" class="col-sm-4 control-label">Confirm Password</label>
+      <div class="col-sm-5">
+        <input type="password" class="form-control" id="password_confirmation" ng-model="signupmsg.password_confirmation" placeholder="Confirm Password" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-8">
+        <button type="submit" class="btn btn-primary">Sign Up</button> &nbsp;&nbsp;
+        <a href="#/" class="btn btn-default">Cancel</a>
+      </div>
+    </div>
+  </form>
+</div>
