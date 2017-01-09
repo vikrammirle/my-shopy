@@ -39,10 +39,10 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/getapi', {
-        templateUrl: 'views/getapi.html',
-        controller: 'GetapiCtrl',
-        controllerAs: 'Ctrl'
+      .when('/listuser', {
+        templateUrl: 'views/listuser.html',
+        controller: 'ListuserCtrl',
+        controllerAs: 'list'
       })
       .otherwise({
         redirectTo: '/'

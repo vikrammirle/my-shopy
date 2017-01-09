@@ -2,7 +2,8 @@
 
 angular.module('myShopyApp')
 .controller('SignupCtrl', function($scope, $http, Registerservice){
-
+  var vm = this
+  vm.signupmsg = {}
   $scope.submitSignupForm = function(signupmsg) {
     var data = {
       "user": {
@@ -15,8 +16,12 @@ angular.module('myShopyApp')
       }
     }
     Registerservice.postData(data).then(function(response){
-        // console.log(response);
+        // console.log(submitSignupForm);
+        // console.log(signupmsg)
+        $scope.signupmsg = {}
+
       });
 
   };
+
 });

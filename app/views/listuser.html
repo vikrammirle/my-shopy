@@ -1,0 +1,29 @@
+<!-- <ul>
+	<li ng-repeat="obj in list.dataObj">
+   {{obj.first_name}}
+ </li>
+</ul> -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+     <th>#</th>
+     <th>First Name</th>
+     <th>Last Name</th>
+     <th>Email</th>
+     <th>Mobile</th>
+     <th>Options</th>
+   </tr>
+ </thead>
+ <tbody>
+  <tr ng-repeat= "obj in list.dataObj">
+    <th>{{ obj.id}}</th>
+    <td>{{ obj.first_name }}</td>
+    <td>{{ obj.last_name }}</td>
+    <td>{{ obj.email }}</td>
+    <td>{{ obj.mobile_number }}</td>
+    <td>
+      <button type="button" class="btn btn-success">Edit</button> &nbsp;&nbsp;
+      <button type="button" class="btn btn-danger" ng-click="del(obj)">Delete</button>
+    </td>
+  </tr>
+</tbody> </table>
